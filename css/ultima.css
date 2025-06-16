@@ -21,9 +21,9 @@ body {
     width: 90px;
     background-color: white;
     padding: 20px 10px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     align-items: center;
 }
 
@@ -32,15 +32,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
 }
 
 .sidebar nav ul li {
-    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
 }
 
 .sidebar nav ul li a img {
     width: 24px;
+    margin-bottom: 5px;
 }
 
 /* Dropdown config */
@@ -203,7 +213,8 @@ header {
 
 /* Scroll se necessário */
 .content {
-    max-height: calc(100vh - 90px); /* Header + padding */
+    flex: 1;
+    padding: 30px;
     overflow-y: auto;
 }
 
