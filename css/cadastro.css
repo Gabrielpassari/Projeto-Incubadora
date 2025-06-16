@@ -1,0 +1,130 @@
+body:has(.retangulo-rosa) .bio-usuario {
+    background-color: rgba(249, 236, 201, 0.7);
+    color: #ECECEC;
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 180px;
+    outline: none;
+    font-size: 18px;
+    line-height: 1.6;
+}
+ 
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ECECEC;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/*CHECKBOX*/
+.form-check {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+.form-check label {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-check input {
+    padding: 12px;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+.form-check input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+
+.btn-cadastrar {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 40%;
+}
+
+.btn-cadastrar:hover {
+    background-color: #a9d1ff;
+
+}
+
+.login-link {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+

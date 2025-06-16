@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Incubadora - Perfil</title>
+    <link rel="stylesheet" href="css/perfil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="profile-header">
+                <!-- Banner -->
+                <div class="profile-banner">
+                    <img src="img/banner.jpg" alt="Banner do perfil">
+                </div>
+
+                <!-- Foto + Info -->
+                <div class="profile-info">
+                    <div class="profile-pic">
+                        <img src="img/youtube.jpeg" alt="Foto do perfil">
+                    </div>
+
+                    <div class="profile-details">
+                        <h1 class="profile-name">Nome do Usuário</h1>
+                        <p class="profile-username">@Usuariotas3</p>
+                        <p class="profile-bio">Jornalista independente atuando nas áreas de direitos humanos, ecologia e comunidades invisibilizadas pela grande mídia.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Adicoes manuais-->
+            <form class="profile-edit" action="#" method="post" enctype="multipart/form-data">
+                <h2>Editar Perfil</h2>
+            
+                <label for="new-photo">Escolher nova foto de perfil:</label><br>
+                <input type="file" id="new-photo" name="new-photo"><br><br>
+            
+                <label for="new-name">Novo nome:</label><br>
+                <input type="text" id="new-name" name="new-name" placeholder="Digite seu nome"><br><br>
+            
+                <label for="new-bio">Biografia:</label><br>
+                <textarea id="new-bio" name="new-bio" rows="4" placeholder="Escreva algo sobre você..."></textarea><br><br>
+            
+                <button type="submit">Salvar alterações</button>
+            </form>
+            
+
+            <!-- Seções adicionais -->
+            <section class="profile-tags">
+                <h2>Temas abordados</h2>
+                <ul>
+                    <li>Jornalismo ambiental</li>
+                    <li>Comunidades indígenas</li>
+                    <li>Contra-informação</li>
+                </ul>
+            </section>
+
+            <section class="profile-timeline">
+                <h2>Contribuições</h2>
+                <ul>
+                    <li><strong>Abril 2025:</strong> Investigação sobre mineração ilegal</li>
+                    <li><strong>Março 2025:</strong> Artigo sobre segurança digital</li>
+                    <li><strong>Janeiro 2025:</strong> Entrevista com ativistas quilombolas</li>
+                </ul>
+            </section>
+
+            <section class="profile-links">
+                <h2>Principais publicações</h2>
+                <ul>
+                    <li><a href="#">As Vozes Silenciadas da Amazônia</a></li>
+                    <li><a href="#">Tecnologia e Vigilância no Brasil</a></li>
+                    <li><a href="#">Por Dentro da Luta Urbana</a></li>
+                </ul>
+            </section>
+
+            <blockquote class="profile-quote">
+                "A verdade é revolucionária." – Rosa Luxemburgo
+            </blockquote>
+
+            <section class="profile-network">
+                <h2>Colaborando com</h2>
+                <ul>
+                    <li>Coletivo Vozes Livres</li>
+                    <li>Rede de Jornalismo Popular</li>
+                    <li>Wiki Contra-Censura</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
