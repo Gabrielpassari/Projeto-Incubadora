@@ -147,7 +147,7 @@ header {
 .categories-card, 
 .model-article, 
 .recent-articles {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -171,10 +171,6 @@ p {
     margin-bottom: 15px;
 }
 
-.article-card {
-    background: yellowgreen;
-}
-
 .article-card ul{
     margin-left: 20px;
     margin-bottom: 15px;
@@ -184,30 +180,18 @@ li {
     margin-bottom: 8px;
 }
 
-
-/* Categorias */
-.categories-card {
-    grid-column: span 1;
-    background: violet;
+/* Artigo em destaque */
+.featured-article {
+    grid-column: span 2;
 }
 
-.categories-columns {
-    display: flex;
-    gap: 30px;
-}
-
-.column {
-    flex: 1;
-}
-
-.column ul{
-    margin-left: 20px;
-    margin-bottom: 15px;
+.featured-article h2 {
+    font-size: 24px;
+    color: #000;
 }
 
 /* Artigo da modelo */
 .model-article {
-    background-color: yellow;
     grid-column: span 2;
 }
 
@@ -222,6 +206,40 @@ li {
 }
 
 .model-image {
+    flex: 1;
+    min-width: 350px;
+}
+
+.model-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.image-caption {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Artigo do quilombo */
+.model-article {
+    grid-column: span 2;
+}
+
+.quilombo-text-image {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.model-text {
+    flex: 2;
+}
+
+.quilombo-image {
     flex: 1;
     min-width: 250px;
 }
@@ -246,10 +264,9 @@ li {
 }
 
 .recent-article {
-    background-color: rgb(253, 233, 248);
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #fcd9ee;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .recent-article:last-child {
